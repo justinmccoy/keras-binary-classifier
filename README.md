@@ -52,9 +52,8 @@ described in detail below.
 1. [Get 24-Hours of free access to the PowerAI platform](#1-get-7-Days-of-free-access-to-the-powerai-platform)
 1. [Access and start the Jupyter notebook](#2-access-and-start-the-jupyter-notebook)
 1. [Run the notebook](#3-run-the-notebook)
-1. [Analyze the results](#4-analyze-the-results)
-1. [Save and share](#5-save-and-share)
-1. [End your trial](#6-end-your-trial)
+1. [Save and share your model ](#4-save-and-share-your-model)
+1. [End your trial](#5-end-your-trial)
 
 ## 1. Get 24-Hours of free access to the PowerAI platform
 
@@ -132,7 +131,27 @@ There are several ways to execute the code cells in your notebook:
     continue executing all cells that follow.
 
 
+## 4. Save and share your model
 
+### How to save your work:
+
+Because this notebook is running temporarily on a Nimbix
+Cloud server, use the following options to save your work:
+
+Under the `File` menu, there are options to:
+
+* `Download as...` will download the notebook to your local system.
+* `Print Preview` will allow you to print the current state of the
+  notebook.
+* Select `Download  as...` and then `seefood.mlmodel` to download your trained food classifier
+
+## 5. End your trial
+
+When you are done with your work, please cancel your subscription by issuing the following command in your ssh session or by visiting the `Manage` link on the **My Products and Services** page.
+
+```sh
+sudo poweroff --force
+```
 ## Links
 * [Free Trial to GPU Accelerated HW in the Cloud](https://developer.ibm.com/linuxonpower/cloud-resources/)
 
