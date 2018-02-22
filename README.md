@@ -1,4 +1,4 @@
-# seeFOOD CNN a binary classifier written in Keras and converted to coreML
+# seeFOOD CNN, a binary classifier written in Keras and converted to coreML
 
 
 Walk you through how to use GPU hardware in the Cloud with Nimbix, to quickly train and deploy a Convolutional Neural Network Model that can tell you whether or not your lunchtime nutritional choice is the right one - all with the camera of the mobile phone in your pocket. All you need are some photos, descriptions of them, and you can be up and running with a model to stream video through in no time flat.
@@ -36,7 +36,7 @@ This repo will walk you through the steps, and technologies to train a Deep Lear
 
 #### PowerAI
 *[PowerAI](https://www.ibm.com/us-en/marketplace/deep-learning-platform/details#product-header-top)  takes advantage of the CPU:GPU NVLink interconnect (that's a fat pipe between CPU:GPU:Memory) to help support and load larger deep learning models than ever before. Train datasets that could never be trained before utilizing system memory without bottlenecks*
-![]
+![PowerAI](/images/powerai.jpg)
 
 ### Steps
 
