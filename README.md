@@ -1,23 +1,30 @@
-# seeFOOD CNN, a binary classifier written in Keras and converted to coreML
+# seeFOOD CNN, a binary classifier written in Keras and converted to CoreML
 
 
-Walk you through how to use GPU hardware in the Cloud with Nimbix, to quickly train and deploy a Convolutional Neural Network Model that can tell you whether or not your lunchtime nutritional choice is the right one - all with the camera of the mobile phone in your pocket. All you need are some photos, descriptions of them, and you can be up and running with a model to stream video through in no time flat.
+Walk you through how to use GPU hardware in the Cloud with Nimbix, to quickly train and deploy a Convolutional Neural Network Model that can tell you whether your lunchtime nutritional choice is the right one - all with the camera of the mobile phone in your pocket. All you need are some photos, descriptions of them, and you can be up and running with a model to stream video through in no time flat.
 
-I'm sure you've seen the eposide of Silicon Valley, but to give you an idea of the amazing technology we are going to share with you today here's a clip:
+I'm sure you've seen the episode of Silicon Valley, but to give you an idea of the amazing technology we are going to share with you today here's a clip:
 
-[![SEEFOOD](https://img.youtube.com/vi/ACmydtFDTGs/0.jpg)](https://www.youtube.com/watch?v=ACmydtFDTGs)
+<p align="center">
+	<a href="https://www.youtube.com/watch?v=ACmydtFDTGs" target="_blank">
+		<img src="https://img.youtube.com/vi/ACmydtFDTGs/0.jpg">
+	</a>
+</p>
 
-So you want to identify hotdogs, great, summer is just around the corner, and you can never be too careful of what you're eating.  You too can develop an app that identifies **Hotdog** and the alternatives... **NotHotdog**
+So you want to identify hotdogs - great! Summer is just around the corner, and you can never be too careful with what you're eating. You too can develop an app that identifies **Hot Dog** and the alternatives... **Not Hot Dog**
 
 
 ## Overview
-This repo will walk you through the steps, and technologies to train a Deep Learning model using a Convolitional Netural Network, evaluate it's accuracy, and save it into a format that can be loaded on an iOS device. With a model converted to Apple's CoreML format we will load a `.mlmodel` into an opensource project: [Lumina](https://github.com/dokun1/lumina).  Within Lumina you can quickly import and activate your .mlmodel, and stream object predictions in real time from the camera feed... Let me repeat, you can stream object predictions from the camera feed in real time.
+This repo will walk you through the steps, and technologies to train a Deep Learning model using a Convolutional Netural Network, evaluate its accuracy, and save it into a format that can be loaded on an iOS device. With a model converted to Apple's CoreML format we will load a `.mlmodel` into an opensource project: [Lumina](https://github.com/dokun1/lumina).  Within Lumina you can quickly import and activate your .mlmodel, and stream object predictions in real time from the camera feed...Let me repeat, you can stream object predictions from the camera feed in real time - and you can do this with one line of code.
 
-![Flow](images/flow.png)
+<p align="center">
+	<img src="images/flow.png">
+</p>
 
 ## Demo
-![Demo](images/demo.gif)
-
+<p align="center">
+	<img src="images/demo.gif">
+</p>
 
 ## Technologies
 
@@ -27,7 +34,7 @@ This repo will walk you through the steps, and technologies to train a Deep Lear
 <img src="images/luminaLogo.jpg" alt="Lumina" style="width: 200px;"/>
 
 #### CoreMLTools
-*[CoreMLTools](https://github.com/apple/coremltools) Integrates trained machine learning models into your iOS app*
+*[CoreMLTools](https://github.com/apple/coremltools) integrates trained machine learning models into your iOS app*
 
 <img src="images/coreml.jpg" alt="CoreML" style="width: 200px;"/>
 
@@ -38,6 +45,7 @@ This repo will walk you through the steps, and technologies to train a Deep Lear
 
 #### Nimbix
 *[Nimbix](https://nimbix.net) provides super computing in the Cloud*
+
 <img src="images/nimbix.png" alt="Nimbix" style="width: 200px;"/>
 
 #### PowerAI
@@ -49,7 +57,7 @@ This repo will walk you through the steps, and technologies to train a Deep Lear
 Follow these steps to setup and run this *phenomenon sweepng the vegan meat industry*. The steps are
 described in detail below.
 
-1. [Get 24-Hours of free access to the PowerAI platform](#1-get-7-Days-of-free-access-to-the-powerai-platform)
+1. [Get 24-hours of free access to the PowerAI platform](#1-get-7-Days-of-free-access-to-the-powerai-platform)
 1. [Access and start the Jupyter notebook](#2-access-and-start-the-jupyter-notebook)
 1. [Run the notebook](#3-run-the-notebook)
 1. [Save and share your model ](#4-save-and-share-your-model)
@@ -152,9 +160,10 @@ When you are done with your work, please cancel your subscription by issuing the
 ```sh
 sudo poweroff --force
 ```
+
 ## Links
 * [Free Trial to GPU Accelerated HW in the Cloud](https://developer.ibm.com/linuxonpower/cloud-resources/)
-
+* [Learn how to use Lumina in an iOS app](https://www.youtube.com/watch?v=8eEAvcy708s)
 
 ## License
 [Apache 2.0](LICENSE)
