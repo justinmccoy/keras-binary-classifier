@@ -16,7 +16,7 @@ This repo will walk you through the steps, and technologies to train a Deep Lear
 ![Flow](images/flow.png)
 
 ## Demo
-![Demo](https://media.giphy.com/media/oX8r7m2hLOFGZPlqVL/giphy.gif)
+![Demo](images/demo.gif)
 
 
 ## Technologies
