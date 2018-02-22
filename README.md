@@ -20,23 +20,25 @@ This repo will walk you through the steps, and technologies to train a Deep Lear
 #### Lumina 
 *[Lumina](https://github.com/dokun1/lumina) is an iOS camera designed in Swift that can use any CoreML model for object recognition, as well as streaming video, images, and qr/bar codes.*
 
-![Lumina](images/luminaLogo.jpg)
+<img src="images/luminaLogo.jpg" alt="Lumina" style="width: 400px;"/>
 
 #### CoreMLTools
 *[CoreMLTools](https://github.com/apple/coremltools) Integrates trained machine learning models into your iOS app*
-![CoreML](images/coreml.jpg)
+
+<img src="images/coreml.jpg" alt="CoreML" style="width: 400px;"/>
 
 #### Keras 
 *[Keras.io](https://keras.io/) is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano.*
-![Keras](images/keras.png)
+
+<img src="images/keras.png" alt="Keras" style="width: 400px;"/>
 
 #### Nimbix
 *[Nimbix](https://nimbix.net) provides super computing in the Cloud*
-![NIMBIX](images/nimbix.png)
+<img src="images/nimbix.png" alt="Nimbix" style="width: 400px;"/>
 
 #### PowerAI
 *[PowerAI](https://www.ibm.com/us-en/marketplace/deep-learning-platform/details#product-header-top)  takes advantage of the CPU:GPU NVLink interconnect (that's a fat pipe between CPU:GPU:Memory) to help support and load larger deep learning models than ever before. Train datasets that could never be trained before utilizing system memory without bottlenecks*
-![PowerAI](/images/powerai.jpg)
+<img src="images/powerai.jpg" alt="PowerAI" style="width: 400px;"/>
 
 ### Steps
 
