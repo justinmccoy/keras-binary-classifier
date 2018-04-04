@@ -153,7 +153,52 @@ Under the `File` menu, there are options to:
   notebook.
 * Select `Download  as...` and then `seefood.mlmodel` to download your trained food classifier
 
-## 5. End your trial
+## 5. Implement Your Model With [Lumina](https://github.com/dokun1/lumina)
+
+You'll need to start an iOS project that uses the **Lumina** framework. You can either clone the repository linked above and use the `LuminaSample` app in the main workspace, or you can make your own iOS app using the framework. Watch [this](https://www.youtube.com/watch?v=8eEAvcy708s) video for more information on using Lumina.
+
+Once you have a project open with Lumina integrated, make sure you implement a camera with at least the following code:
+
+```swift
+let camera = LuminaViewController()
+camera.delegate = self
+camera.streamingModelTypes = [seefood()]
+present(camera, animated: true)
+```
+
+At this point, your iOS app is already making use of the `CoreML` functionality embedded in Lumina. Now, you need to actually do something with the data returned from it.
+
+Extend your class to conform to `LuminaDelegate` like so:
+
+```swift
+extension ViewController: LuminaDelegate {
+    func streamed(videoFrame: UIImage, with predictions: [LuminaRecognitionResult]?, from controller: LuminaViewController) {
+    
+    }
+}
+```
+
+Results streamed from each video frame are given to you in this delegate method. In this example, you have created a binary classifier, so you should only expect one result with either a `1.0` or `0.0` result. Lumina has a built in text label to use as a prompt, so update your method to make use of it here like so:
+
+```swift
+func streamed(videoFrame: UIImage, with predictions: [LuminaRecognitionResult]?, from controller: LuminaViewController) {
+    guard let predicted = predictions else {
+        return
+    }
+    guard let value = predicted.first?.predictions?.first else {
+        return
+    }
+    if value.confidence > 0 {
+        controller.textPrompt = "\(String(describing: predicted.first?.type)): Not Hot Dog"
+    } else {
+        controller.textPrompt = "\(String(describing: predicted.first?.type)): Hot Dog"
+    }
+}
+```
+
+Run your app, and point the camera at a hot dog, then at anything that isn't a hot dog. The results speak for themselves!
+
+## 6. End your trial
 
 When you are done with your work, please cancel your subscription by issuing the following command in your ssh session or by visiting the `Manage` link on the **My Products and Services** page.
 
