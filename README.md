@@ -206,7 +206,7 @@ sudo poweroff --force
 </p>
 
 
-## Links
+# Links
 * [Free Trial to GPU Accelerated HW in the Cloud](https://developer.ibm.com/linuxonpower/cloud-resources/)
 * [Learn how to use Lumina in an iOS app](https://www.youtube.com/watch?v=8eEAvcy708s)
 
@@ -217,5 +217,6 @@ sudo poweroff --force
 * **Data Science Experience**: Master the art of data science with IBM's [Data Science Experience](https://datascience.ibm.com/)
 * **PowerAI**: Get started or get scaling, faster, with a software distribution for machine learning running on the Enterprise Platform for AI: [IBM Power Systems](https://www.ibm.com/ms-en/marketplace/deep-learning-platform)
 
-## License
+# License
 [Apache 2.0](LICENSE)
+
